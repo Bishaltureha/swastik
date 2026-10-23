@@ -1,0 +1,13 @@
+{
+  "name": "swastik",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Swastik Premium Poha website",
+  "scripts": {
+    "dev": "serve . -l 3000",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
