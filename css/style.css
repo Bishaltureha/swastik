@@ -629,3 +629,16 @@ footer .fcol .fr{letter-spacing:.14em;font-size:.68rem;white-space:nowrap;margin
 footer .fcol .fr+b{margin-top:0}
 footer .fg>div:nth-child(2) a{white-space:nowrap}
 footer .fcol:nth-of-type(n) b{min-height:2.6em}
+/* footer responsive (must come after the desktop footer rules) */
+@media(max-width:1100px){footer .fg{grid-template-columns:1fr 1fr 1fr}footer .fcol b{min-height:0}}
+@media(max-width:700px){footer .fg{grid-template-columns:1fr 1fr;gap:34px 20px}footer .fg>div:nth-child(1){grid-column:1/-1}footer .fcol .fr{white-space:normal}footer .fg>div:nth-child(2) a{white-space:normal}.copy{flex-direction:column}}
+@media(max-width:480px){footer .fg{grid-template-columns:1fr}}
+/* never let decorative elements widen the page on phones */
+html,body{overflow-x:clip}
+section,footer{overflow-x:clip}
+@media(max-width:900px){
+  .hero{min-height:0;padding:112px 0 56px}
+  .hero-img{width:100%}
+  .hero .wrap{gap:36px}
+}
+@media(max-width:560px){.wa .tip{display:none!important}.wa{right:16px;bottom:16px}.wa a.b{width:56px;height:56px}}
