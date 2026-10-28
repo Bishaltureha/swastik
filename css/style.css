@@ -642,3 +642,28 @@ section,footer{overflow-x:clip}
   .hero .wrap{gap:36px}
 }
 @media(max-width:560px){.wa .tip{display:none!important}.wa{right:16px;bottom:16px}.wa a.b{width:56px;height:56px}}
+/* very small screens (folded phones, 280-360px) */
+@media(max-width:380px){
+  .wrap{width:calc(100% - 32px)}
+  h1{font-size:clamp(2.1rem,10vw,2.6rem)}
+  h2{font-size:clamp(1.6rem,8vw,2rem)}
+  .nums{grid-template-columns:1fr 1fr}
+  .nums div{padding:18px 10px 18px 14px;min-width:0}
+  .nums b{font-size:clamp(1.9rem,11vw,2.6rem)}
+  .nums span{font-size:.64rem;letter-spacing:.1em}
+  .btn{padding:15px 24px;letter-spacing:.14em}
+  .duo-packs{gap:12px}
+  .node{grid-template-columns:72px 1fr;gap:16px}
+  .node .circ{width:72px;height:72px}.node .circ svg{width:32px;height:32px}
+  .chain::before{left:35px}
+}
+/* landscape phones: don't force 100vh tall heroes */
+@media(max-height:520px) and (orientation:landscape){
+  .hero,.chero{min-height:0;padding-top:96px;padding-bottom:40px}
+  .phead{padding-top:120px}
+  .scroll-cue{display:none}
+}
+/* very large screens: keep text readable */
+@media(min-width:1900px){
+  html{font-size:112.5%}
+}
