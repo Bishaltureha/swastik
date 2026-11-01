@@ -667,3 +667,6 @@ section,footer{overflow-x:clip}
 @media(min-width:1900px){
   html{font-size:112.5%}
 }
+/* bag band: caption at the top so it stays clear of the bags */
+.band-img:not(.small) .cap{bottom:auto;top:clamp(24px,4vw,56px)}
+.band-img:not(.small)::after{background:linear-gradient(0deg,#10135c00 55%,#10135ca6)}
