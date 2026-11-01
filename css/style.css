@@ -353,7 +353,7 @@ h1{letter-spacing:-.035em}h2{letter-spacing:-.028em}
 .cta-sec h2 em{font-weight:800;letter-spacing:-.04em}
 /* bag band: shorter, whole image kept in view; photo's own blur fills the sides */
 .band-img{height:clamp(420px,44vw,600px);position:relative;overflow:hidden;background:#2a2f6b}
-.band-img::before{content:"";position:absolute;inset:-60px;background:url(../assets/bags.jpg) center/cover;filter:blur(30px) saturate(1.1)}
+.band-img::before{content:"";position:absolute;inset:-60px;background:url(../assets/bags.jpg?v=2) center/cover;filter:blur(30px) saturate(1.1)}
 .band-img img{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:contain;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 .band-img{background:var(--navy)}
 .band-img::before{display:none}
